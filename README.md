@@ -2,6 +2,37 @@
 
 ## Task 0: Get Specific Character by ID
 
+Easily fetch detailed information about a single character using their unique ID (1-4).  
+Each query returns the following fields:
+
+| Field   | Description           |
+|---------|-----------------------|
+| `id`    | Unique character ID   |
+| `name`  | Character's name      |
+| `status`| Alive, Dead, or Unknown |
+| `species`| Character's species  |
+| `type`  | Character's type      |
+| `gender`| Character's gender    |
+
+**Example Query:**
+```graphql
+query {
+    character(id: 1) {
+        id
+        name
+        status
+        species
+        type
+        gender
+    }
+}
+```
+
+**Result:**  
+A JSON object with the character's details.
+
+---
+
 Four queries to fetch individual character details using their IDs (1-4).
 Each query retrieves:
 
